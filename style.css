@@ -514,12 +514,13 @@ h2{
     width: 67%;
     flex-wrap: wrap;
     justify-content: flex-end;
+    margin-left: 75px;
 }
-.one,.one img, .two,.two img, .three,.three img, .four,.four img, .five, .five img, .six,.six img, .seven, .seven img, .height,.height img{
-    width: 200px;
+.bloc-photo img{
+    width: 250px;   
     height: auto;
-    padding-right: 6px;
-    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-bottom: 5px;
 }
 /* ----------------------------------------------------BLOG-page-1--------------------------------------------*/
 /* titre de la page */
@@ -775,12 +776,14 @@ html body main.main-apropos button.rdv{
 }
 .bloc-photo{
     width: 100%;
+    display: flex;
+    margin-left: 0;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
-.one, .one img, .two, .two img, .three, .three img, .four, .four img, .five, .five img, .six, .six img, .seven, .seven img, .height, .height img {
-	width: 174px;
-	height: auto;
-	padding-right: 6px;
-	padding-bottom: 3px;
+.bloc-photo img{
+    width: 48%;
+    padding-left: 0;
 }
 /* ----------------------------------------------------------PRESTATIONS ET SERVICES--------------------------------------------------------- */
 
@@ -859,11 +862,13 @@ html body main.main-apropos button.rdv{
 	flex-direction: column;
 }
 .inst-maud {
-	width: 250px;
+	width: 100%;
 	height: 250px;
 	transform: translateY(9px);
-	transform: translateX(24px);
 	margin-top: 50px;
+}
+html body main div.contact-center form div.civi input#prenom{
+    width: 52%;
 }
 .joindre {
 	display: flex;
@@ -983,25 +988,30 @@ html body main.main-apropos button.rdv{
     transform: translateY(-70px);
 }
 /* --------------------------------------------------------------MES CREATIONS---------------------------------------- */
-.texte-crea{
-    width: 100%;
-    text-align: center;  
-    transform: translateX(0); 
-    margin-bottom: 20px;
+.texte-crea {
+	width: 100%;
+	text-align: center;
+	transform: translateX(0); 
 }
-.bloc-crea{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.bloc-crea {
+	display: flex;
+	width: 100%;
+	margin-top: 50px;
+	flex-direction: column;
 }
-.bloc-photo{
-    width: 100%;
+.bloc-photo {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+    justify-content: none; 
+	margin-left: 0; 
+    margin-top: 15px;
 }
-.one, .one img, .two, .two img, .three, .three img, .four, .four img, .five, .five img, .six, .six img, .seven, .seven img, .height, .height img {
-	width: 188px !important;
+.bloc-photo img {
+	width: 50%;
 	height: auto;
-	padding-right: 6px;
-	padding-bottom: 3px;
+	padding-left: 0; 
+	padding-bottom: 5px;
 }
 /* --------------------------------------------PRESTATIONS ET TARIFS---------------------------------------- */
 
@@ -1092,13 +1102,16 @@ html body main.main-apropos button.rdv{
 	padding-top: 50px;
 	flex-direction: column;
 }
+html body main div.contact-center form div.civi{
+    display: flex;
+}
 .inst-maud {
-    width: 332px !important;
+    width: 100%;
     height: 250px;
     transform: translateY(9px);
-    transform: translateX(7px);
     margin-top: 50px;
 }
+
 .joindre {
     /* display: flex; */
     flex-direction: column;
