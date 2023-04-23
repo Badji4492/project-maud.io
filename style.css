@@ -1093,26 +1093,26 @@ html body main.main-apropos button.rdv{
 	flex-direction: column;
 }
 .inst-maud {
-	width: 250px;
-	height: 250px;
-	transform: translateY(9px);
-	transform: translateX(24px);
-	margin-top: 50px;
+    width: 332px;
+    height: 250px;
+    transform: translateY(9px);
+    transform: translateX(7px);
+    margin-top: 50px;
 }
 .joindre {
-	display: flex;
-	flex-direction: column;
-	background-color: #000;
-	align-items: center;
-	justify-content: center;
-	border: #62388E 3px solid;
-	width: 209px;
-	height: 194px;
-	/* transform: translateY(-250px); */
-	position: absolute;
-	top: 866px;
-	right: 98px;
-	/* margin-bottom: 50px; */
+    /* display: flex; */
+    flex-direction: column;
+    background-color: #000;
+    align-items: center;
+    justify-content: center;
+    border: #62388E 3px solid;
+    width: 209px;
+    height: 194px;
+    /* transform: translateY(-250px); */
+    position: absolute;
+    top: 879px;
+    right: 89px;
+    /* margin-bottom: 50px; */
 }
 
 }
