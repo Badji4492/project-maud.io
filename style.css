@@ -1031,7 +1031,11 @@ html body main.main-apropos button.rdv{
         display: flex;
         flex-direction: column;
 }
-
+.bl-1 {
+    width: 50%;
+    transform: translateY(384px);
+    margin-left: 20px;
+}
 /* -------------------------------------------------------------ARTICLE-2-BLOG------------------------------------------------------ */
 .bloc-blanc {
 	display: flex;
