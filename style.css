@@ -998,7 +998,7 @@ html body main.main-apropos button.rdv{
     width: 100%;
 }
 .one, .one img, .two, .two img, .three, .three img, .four, .four img, .five, .five img, .six, .six img, .seven, .seven img, .height, .height img {
-	width: 188px;
+	width: 188px !important;
 	height: auto;
 	padding-right: 6px;
 	padding-bottom: 3px;
@@ -1044,7 +1044,7 @@ html body main.main-apropos button.rdv{
 }
 .bl-1{
     width: 50%;
-    transform: translateY(384px);
+    transform: translateY(384px) !important;
     margin-left: 20px;
 }
 .bl-2{
@@ -1093,7 +1093,7 @@ html body main.main-apropos button.rdv{
 	flex-direction: column;
 }
 .inst-maud {
-    width: 332px;
+    width: 332px !important;
     height: 250px;
     transform: translateY(9px);
     transform: translateX(7px);
@@ -1110,8 +1110,8 @@ html body main.main-apropos button.rdv{
     height: 194px;
     /* transform: translateY(-250px); */
     position: absolute;
-    top: 879px;
-    right: 89px;
+    top: 879px !important;
+    right: 89px !important;
     /* margin-bottom: 50px; */
 }
 
