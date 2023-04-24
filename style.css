@@ -1,4 +1,3 @@
-/* <<<<<<< HEAD */
 
 /* ----------------------------------------------------------------------Commun à toutes les pages--------------------------- */
 /* Généralités */
@@ -431,7 +430,7 @@ h2{
     background-color: #000;
     cursor: pointer;
 }
----------------------------------------------------------BLOG-----------------------------------
+/* ---------------------------------------------------------BLOG----------------------------------- */
 .center-blog{
     width: 900px;
     display: flex;
@@ -501,27 +500,24 @@ h2{
 /* bloc dans le main */
 .bloc-crea{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     margin-top: 50px;
 }
 .texte-crea{
-    width: 26%;
+    width: 100%;
     text-align: center;
-    transform: translateX(40px);
+   margin-bottom: 20px;
 }   
 /* taille des bloc et image */
 .bloc-photo{
     display: flex;
-    width: 67%;
     flex-wrap: wrap;
-    justify-content: flex-end;
-    margin-left: 75px;
+    width: 50% ;
 }
 .bloc-photo img{
-    width: 250px;   
-    height: auto;
-    padding-left: 5px;
-    padding-bottom: 5px;
+    width: 25%;
 }
 /* ----------------------------------------------------BLOG-page-1--------------------------------------------*/
 /* titre de la page */
@@ -651,7 +647,7 @@ html body main div.blc-text h4{
 
 /* -----------------------------------------------------------------RESPONSIVE----------------------------------------------------------------- */
 
-@media screen and (max-width:360px){
+@media screen and (min-width:330px) and (max-width:900px){
 /* -------------------------------------------------------HEADER--------------------------------------------------- */
 header{
     display: flex;
@@ -677,14 +673,20 @@ header{
     padding-left: 0;
 }
 
-/* ------------------------------------------------------------------MENU--------------------------------------------- */
-/* reduction de la taille du menu en responsive */
+/* -----------------------------------------------------------------MENU--------------------------------------------------------------- */
+
 html body nav.show ul li a {
 	text-decoration: none;
 	color: #FFF;
 	font-size: 29px;
-	line-height: 54px !important;
+	line-height: 57px;
+    transform: translateY(25px);
 }
+
+html body nav.show ul{
+    transform: translateY(25px);
+}
+
 /* --------------------------------------------------------FOOTER--------------------------------------------- */
 .foot{
     height: auto;
@@ -692,7 +694,7 @@ html body nav.show ul li a {
     padding-bottom: 10px;
     margin-top: 65px;
 }
-/* menu */
+/* menu
 html body nav.show ul li a {
 	text-decoration: none;
 	color: #FFF;
@@ -700,8 +702,8 @@ html body nav.show ul li a {
 	line-height: 95px;
 }
 html body nav.show ul {
-	transform: translateY(20PX);
-}
+	transform: translateY(20PX); */
+
 /* -------------------------------------------------------PAGE ACCUEIL------------------------------------------------------- */
 /* photo */
 .accueil{
@@ -747,12 +749,6 @@ html body footer section.foot div.menu-footer {
 .txt p {
 	padding-top: 48px;
 	text-align: center;
-    font-size: 14px;
-}
-.titre {
-	font-size: 24px;
-	color: #62388E;
-	text-align: center;
 }
 /* bouton rendez-vous */
 
@@ -762,6 +758,12 @@ html body main.main-apropos button.rdv{
 /* photo de maud */
 .photo-maud{
     transform: translateY(-70px);
+}
+/* Sous-titre */
+.titre {
+	font-size: 24px;
+	color: #62388E;
+	text-align: center;
 }
 /* ---------------------------------------------------------MES CREATIONS----------------------------------------------------------- */
 .texte-crea{
@@ -776,1153 +778,26 @@ html body main.main-apropos button.rdv{
     align-items: center;
 }
 .bloc-photo{
-    width: 100%;
     display: flex;
-    margin-left: 0;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    width: 100% ;
 }
 .bloc-photo img{
-    width: 48%;
-    padding-left: 0;
-}
-/* ----------------------------------------------------------PRESTATIONS ET SERVICES--------------------------------------------------------- */
-
-.groupe-presta{
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-}
-.btdespieds ul {
- transform: translateY(0);
-}
-/* ---------------------------------------------------------------BLOG-------------------------------------------------------------------------- */
-.center-blog{
-    display: flex;
-    flex-direction: column;
-
-}
-/* -----------------------------------------------------------------------ARTICLE 2-BLOG---------------------------------------------------------------- */
-.bloc-blanc {
-	display: flex;
-	width: 100%;
-	background-color: white;
-	justify-content: center;
-	padding-top: 20px;
-	padding-bottom: 70px;
-	flex-direction: column;
-}
-.bl-1{
     width: 50%;
-    transform: translateY(395px);
-    margin-left: 20px;
-}
-.bl-2{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 15px;
-   
-
-}
-.bl-3{
-    width: 100%;
-}
-.bl-3 img{
-    width: 100%;
-}
-.bl-4 {
-	width: 50%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-    transform: translateX(90%);
-}
-.retour{
-    text-align: center;
-    padding-top: 20px;
-}.blc-text {
-	width: 100%;
-	text-align: center;
-    font-size: 15px;
-}
-.num-page {
-	display: flex;
-	width: 80%;
-	border: solid 1px white;
-	height: 40px;
-	align-items: center;
-	justify-content: space-between;
-	margin-top: 60px;
-}
-/* -------------------------------------------------------------CONTACT------------------------------------------------------------- */
-.contact-center {
-	display: flex;
-	padding-top: 50px;
-	flex-direction: column;
-}
-.inst-maud {
-	width: 100%;
-	height: 250px;
-	transform: translateY(9px);
-	margin-top: 50px;
-}
-html body main div.contact-center form div.civi input#prenom{
-    width: 52%;
-}
-.joindre {
-	display: flex;
-	flex-direction: column;
-	background-color: #000;
-	align-items: center;
-	justify-content: center;
-	border: #62388E 3px solid;
-	width: 209px;
-	height: 194px;
-	/* transform: translateY(-250px); */
-	position: absolute;
-	top: 866px;
-	right: 98px;
-	/* margin-bottom: 50px; */
-}
-}
-@media screen and (max-width:412px) {
-
-/* --------------------------------------------------------HEADER------------------------------------------     */
-
-header{
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-}
-/* disparition de l'instagram */
-.insta{
-    display: none;
-}
-/* modification de la taille du logo et de l'alignement */
-.logotype{
-    transform: translateY(25px);
-    width: 120px;
-    height: auto;
-}
-/* le texte menu à coté du bouton burger */
-.menu{
-    display: none;
-}
-/* alignement du bouton burger */
-.btn{
-    padding-left: 0;
-}
-
-/* -----------------------------------------------------MENU-------------------------------------------------------------- */
-html body nav.show ul li a {
-	text-decoration: none;
-	color: #FFF;
-	font-size: 29px;
-	line-height: 54px !important;
-   
-}  
-html body nav.show ul{
-
-    transform: translateY(25px);
-}
-/* -------------------------------------------------------ACCUEIL--------------------------------------------------------------- */
-/* photo */
-.accueil{
-    width: 348px;
-}
-/* titre */
-html body main h1{
-    font-size: 18px;
-    margin-bottom: 0;
-    width: 80%;
-}
-/* lien menu footer */
-html body footer section.foot div.menu-footer {
-        display: flex;
-        flex-direction: column;
-        text-align: center; 
-}
-/* "pipe" dans le menu footer */
-.trait-blanc{
-    display: none;
-}
-
-/* ----------------------------------------------------A PROPOS----------------------------------------------------------- */
- /* conteneur texte + photo + bouton */
- .center {
-	display: flex;
-	width: 100%;
-	padding-top: 10px;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-}
-/* conteneur bloc text */
-.txt {
-	width: auto;
-	transform: translateY(0);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding-top: 25px;
-}
-/* texte */
-.txt p {
-	padding-top: 48px;
-	text-align: center;
-    font-size: 14px;
-}
-.titre {
-	font-size: 24px;
-	color: #62388E;
-	text-align: center;
-}
-/* bouton rendez-vous */
-
-html body main.main-apropos button.rdv{
-    transform: translateY(-100px);
-}
-/* photo de maud */
-.photo-maud{
-    transform: translateY(-70px);
-}
-/* --------------------------------------------------------------MES CREATIONS---------------------------------------- */
-.texte-crea {
-	width: 100%;
-	text-align: center;
-	transform: translateX(0); 
-}
-.bloc-crea {
-	display: flex;
-	width: 100%;
-	margin-top: 50px;
-	flex-direction: column;
-}
-.bloc-photo {
-	display: flex;
-	width: 100%;
-	flex-wrap: wrap;
-    justify-content: none; 
-	margin-left: 0; 
-    margin-top: 15px;
-}
-.bloc-photo img {
-	width: 50%;
-	height: auto;
-	padding-left: 0; 
-	padding-bottom: 5px;
-}
-/* --------------------------------------------PRESTATIONS ET TARIFS---------------------------------------- */
-
-.groupe-presta{
-    flex-direction: column;
-    width: 90%;
-    align-items: center;
-    margin-bottom: 18px;
-
-}
-
-.btdesmains, .btdespieds {
-	width: 350px;
-	height: auto;
-	border: #FFF 1px solid;
-	text-align: center;
-	padding: 20px;
-	margin-bottom: 20px;
-}
-.btdespieds ul {
- transform: translateY(0);
- 
-}
-/* -------------------------------------------------------------BLOG--------------------------------------------------- */
-.center-blog{
-
-        display: flex;
-        flex-direction: column;
-}
-
-/* -------------------------------------------------------------ARTICLE-2-BLOG------------------------------------------------------ */
-.bloc-blanc {
-	display: flex;
-	width: 100%;
-	background-color: white;
-	justify-content: center;
-	padding-top: 20px;
-	padding-bottom: 70px;
-	flex-direction: column;
-}
-.bl-1{
-    width: 50%;
-    transform: translateY(360px) !important;
-    margin-left: 20px;
-}
-.bl-2{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 15px;
-   
-
-}
-.bl-3{
-    width: 100%;
-}
-.bl-3 img{
-    width: 100%;
-}
-.bl-4 {
-	width: 50%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-    transform: translateX(90%);
-}
-.retour{
-    text-align: center;
-    padding-top: 20px;
-}.blc-text {
-	width: 100%;
-	text-align: center;
-    font-size: 15px;
-}
-.num-page {
-	display: flex;
-	width: 80%;
-	border: solid 1px white;
-	height: 40px;
-	align-items: center;
-	justify-content: space-between;
-	margin-top: 60px;
-}
-/* -------------------------------------------------------------CONTACT---------------------------------------------------- */
-.contact-center {
-	display: flex;
-	padding-top: 50px;
-	flex-direction: column;
-}
-html body main div.contact-center form div.civi{
-    display: flex;
-}
-.inst-maud {
-    width: 100%;
-    height: 250px;
-    transform: translateY(9px);
-    margin-top: 50px;
-}
-
-.joindre {
-    /* display: flex; */
-    flex-direction: column;
-    background-color: #000;
-    align-items: center;
-    justify-content: center;
-    border: #62388E 3px solid;
-    width: 209px;
-    height: 194px;
-    /* transform: translateY(-250px); */
-    position: absolute;
-    top: 879px !important;
-    right: 89px !important;
-    /* margin-bottom: 50px; */
-}
-
-/* ======= */
-
-/* ----------------------------------------------------------------------Commun à toutes les pages--------------------------- */
-/* Généralités */
-body{
-    background-color: #000;
-}
-html body header{
-    display: flex;
-    width: 100%;
-    height: 120px;
-    justify-content: space-between;
-    align-items: center;
-}
-p{
-    color: #FFF;
-}
-html body main h1{
-    font-size: 25px;
-    text-transform: uppercase;
-}
-/* -------------------------------------------------------------HEADER-------------------------------------------------------------- */
-/* Menu burger */
-.burger{
-    width: 42px;
-    height: 24px;
-    
-    cursor: pointer;
-    position: relative;
-}
-.burger span{
-    width: 100%;
-    height: 4px;
-    background-color: #FFF;
-    display: block;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: background-color 1 ease-in-out;
-}
-.burger span::before, .burger span::after{
-    content: "";
-    position: absolute;
-    width: 100%;    
-    height: 4px;
-    background-color:#FFF ;
-    transition: transform 1 ease-in-out;
-}
-.burger span::before{
-    transform: translateY(-10px);
-}
-.burger span::after{
-    transform: translateY(10px);
-}
-.burger.active span{
-    background-color: transparent;
-}
-.burger.active span::before{
-    transform: translateY(0px) rotateZ(45deg);
-}
-.burger.active span::after{
-    transform: translateY(0px) rotateZ(-45deg);
-}
-.btn{
-    display: flex;
-    padding-top: 40px;
-    padding-left: 5%;
-}
-.menu{
-    color: #FFF;
-    padding-left: 5px;
-    transform: translateY(2px);
-}
-
-.logotype{
-    width: 160px;
-    height: 90px;
-}
-
-
-/* instagram */
-.insta{
-    display: flex;
-    width: 100px;
-    height: auto;
-    transform: translateY(20px);
-    padding-right: 5%;
-
-}
-.insta img{
-    width: 20px;
-    height: 20px;
-}
-.insta p{
-    color: white;
-    padding-left: 5px;
-}
-/* toggle du bouton burger */
-nav{
-    width: 100%;
-}
-
-nav ul{
-    display: none;
-}
-nav.show ul{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-/* decoration du menu */
-html body nav.show ul li a{
-    text-decoration: none;
-    color: #FFF;
-    font-size: 60px;
-    line-height: 95px;
-}
-html body nav.show ul li a:hover{
-    color: #62388E;
-}
-
-.logo.show, .insta.show, main.show, footer.show{
-    display: none;
-}
-
-/* -----------------------------------------------------------FOOTER----------------------------------------------- */
-/* Design du footer */
-.foot{
-    width: 100%;
-    background-color: #62388E;
-    height: 250px;
-    margin-top: 70px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.logo-footer{
-    width: 120px;
-    height: auto;
-}
-.adresse{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 25px;
-}
-.siren{
-    padding-top: 25px;
-}
-.menu-footer{
-    padding-top: 25px;
-}
-.menu-footer a{
-    text-decoration: none;
-    color: #FFF;
-}
-.menu-footer a:hover{
-    color: black;
-}
-.trait-blanc{
-    color:#FFF;
-}
-.copyright{
-    background-color: black;
-    width: 100%;
-    height: 40px;
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-}
-.copyright p{
-    font-size: 12px;
-}
-/* -------------------------------------------------MENU RESPONSIVE--------------------------------------------------------------------- */
-
-html body nav.show ul{
-    transform: translateY(-40PX);
-}
-
-/* -------------------------------------------------------------Accueil------------------------------------------------------- */
-/* Corps de la page */
-main{
-    width: 100;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-
-}
-html body main h1{
-    color: #FFF;
-    text-align: center;
-    padding-top: 40px;
-
-}
-/* illustration de la page d'accueil */
-.accueil{
-    padding-top: 50px;
-    width: 450px;
-    height: auto;
-    visibility: visible;
-}
-
-/* bouton contact de la page d'accueil */
-.btn-contact{
-    background-color:#62388E ;
-    width: 115px;
-    height: 30px;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: translateY(75px);
-    color: #FFF;
-    cursor: pointer;
-}
-
-.btn-contact:hover{
-background-color: #000; 
-}
-/* ----------------------------------------------------- A propos--------------------------------------------------- */
-
-/* Couleur du texte à propos */
-
-.titre{
-    font-size: 24px;
-    color: #62388E;
-}
-
-/* alignement du corps de la page à propos */
-.photo-maud{
-
-    width: 300px;
-    height: auto;
-}
-.txt p{
-    padding-top: 25px;
-}
-.txt{
-    width: 460px;
-    transform: translateY(-40px);
-}
-.center{
-    display: flex;
-    width: 100%;
-    padding-top: 10px;
-    justify-content: center;
-    align-items: center;
-    
-}
-/* bouton contact */
-.rdv{
-    background-color:#62388E ;
-    width: 135px;
-    height: 30px;
-    color: #FFF;
-    cursor: pointer;
-}
-.rdv:hover{
-    background-color: #000;
-}
-/* -------------------------------------------------------PAGE CONTACT------------------------------------ */
-/* Formulaire */
-form{
-    display: flex; 
-    flex-direction: column;   
-}
-/* Champs du formulaire */
-form input, #email, textarea{
-    margin-top: 8px;
-}
-/* placeholder */
-::-moz-placeholder { 
-    text-align:center; 
-}
-/* Espace entre les champs du formulaire */
-.civi input, #email, .envoie input{
-    height: 25px;
-}
-/* alignement du texte rempli par l'utilisateur */
-.civi #nom, .civi #prenom, #email {
-    text-align: center;
-}
-/* alignement du placeholder dans le message à renseigner */
-textarea::-moz-placeholder { 
-    text-align:start; 
-}  
-/* Caractéristique du bloc des message à compléter par l'utilisateur */
-textarea{
-    resize: none;
-    padding: 5px ;
-}
-/* texte dans l'encadré des coordonnées */
-label{
-    width: 270px;
-    color: #FFF;
-}
-/* bloc rgpd */
-.auth{
-    display: flex;
-    justify-content: center;
-}
-/* bloc avec les boutons envoie et effacer */
-.envoie{
-    display: flex;
-    justify-content: center;
-    width:100% ;
-    justify-content: space-evenly;
-}
-/* styles des boutons du bloc envoie */
-.envoie input{
-    background-color: #62388E;
-    color: #FFF;
-    width: 40%;
-    
-}
-.envoie input:hover{
-    background-color: #000;
-    cursor: pointer;
-}
-/* image de l'institut de maud */
-.inst-maud{
-    width: 250px;
-    height: 250px;
-    transform: translateY(9px);
-    transform: translateX(200px);
-}
-/* bloc comprenant le formulaire et l'image */
-.contact-center{
-    display: flex;
-    padding-top: 50px;
-}
-/* Titre du bloc de coordonnées */
-h3{
-    color: #FFF;
-    text-transform: uppercase;
-    height: auto;
-   
-}
-/* bloc coordonnées telephonique et emails */
-.joindre{
-    display: flex;
-    flex-direction: column;
-    background-color: #000;
-    align-items: center;
-    justify-content: center;
-    border: #62388E 3px solid;
-    width: 230px;
-    height: 230px;
-    transform: translateY(-250px);
-    position: absolute;
-    top: 500px;
-    right: 450px;
-}
-/* alignement du blocs telephone et du bloc emails dans le bloc coordonnées */
-.tel-contact, .email-contact{
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly; 
-   padding-top: 25px; 
-
 } 
-/* icone telephone et email */
-.tel-ico, .mail-ico{
-    width: 15px;
-    height: 15px;
-}
-.joindre, .contact-center{
-    margin-bottom: 50px;
-}
-.email-contact a{
-    text-decoration: none;
-    color: #FFF;
-    
-}
-.email-contact a:hover{
-    background-color: #FFF;
-    color: #000;
-}
-/* ---------------------------------------------PRESTATIONS ET TARIFS------------------------ */
-/* articles */
-li{
-    color: #FFF;
-}
-/* titres des colonnes */
-h2{
-    font-size: 20px;
-    color: #000;
-    text-transform: uppercase;
-}
-/* Bloc prix */
-.btdesmains,.btdespieds{
-    width: 350px;
-    height: auto;
-    border: #FFF 1px solid;
-    text-align: center;
-    padding: 20px;
-}
-/* boites englobants les 2 blocs des prestations */
-.groupe-presta{
-    display: flex;
-    width: 1050px;
-    justify-content: space-evenly;
-    margin-top: 60px;
-    margin-bottom: 60px;
-}
-/* bloc des Titres des colonnes */
-.title-presta{
-    background-color: #FFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 45px;
-    margin-bottom: 10px;
-    border-radius: 8px;
-}
-/* alignements des articles des prestations pieds */
-.btdespieds ul{
-    transform: translateY(40px);
-}
-/* bouton prendre rendez-vous */
-.prendre-ct{
-    background-color: #62388E;
-    color: #FFF;
-    height: 30px;
-}
-.prendre-ct:hover{
-    background-color: #000;
-    cursor: pointer;
-}
----------------------------------------------------------BLOG-----------------------------------
-.center-blog{
-    width: 900px;
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.blog1, .blog2, .blog3{
-    display: inline-flex;
-    width: 250px;
-    height: 430px;
-    border: 1px #FFF solid;
-    background-color: #FFF;
-    margin: 30px;
-
-}
-.blog1 img, .blog2 img, .blog3 img{
-
-    width:250px ;
-    height: 230px;
-}
-.blog1{
-    flex-direction: column;
-    text-align: center;
-    color: #000;
-}
-.title-blog1{
-    padding-top:40px ;
-    font-weight: 700;
-    font-size: 15px;
-}
-.blog1 p{
-    color: #000;
-    padding-top: 40px;
-}
-.blog2{
-    flex-direction: column;
-    text-align: center;
-    color: #000;
-}
-.title-blog2{
-    padding-top:40px ;
-    font-weight: 700;
-    font-size: 15px;
-}
-.blog2 p{
-    color: #000;
-    padding-top: 40px;
-}
-.blog3{
-    flex-direction: column;
-    text-align: center;
-    color: #000;
-}
-.title-blog3{
-    padding-top:40px ;
-    font-weight: 700;
-    font-size: 15px;
-}
-.blog3 p{
-    color: #000;
-    padding-top: 40px;
-}
-/* -----------------------------------------------MES CREATIONS-------------------------------------------------- */
-/* titre de section */
-
-/* bloc dans le main */
-.bloc-crea{
-    display: flex;
-    width: 100%;
-    margin-top: 50px;
-}
-.texte-crea{
-    width: 26%;
-    text-align: center;
-    transform: translateX(40px);
-}   
-/* taille des bloc et image */
-.bloc-photo{
-    display: flex;
-    width: 67%;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    margin-left: 75px;
-}
-.bloc-photo img{
-    width: 250px;   
-    height: auto;
-    padding-left: 5px;
-    padding-bottom: 5px;
-}
-/* ----------------------------------------------------BLOG-page-1--------------------------------------------*/
-/* titre de la page */
-
-html body main h1{
-    margin-bottom: 30px;
-}
-/* premier-bloc */
-.bl-1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;   
-}
-/* fleches */
-.bl-1 img,.bl-4 img{
-    width: 25px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    color: #000;
-}
-/* taille et alignement du 1er bloc et du second */
-.bl-1,.bl-2{
-    width: 20%;
-    text-align: center;
-
-}
-/* font des bloc 1 et 4 */
-.bl-1 p, .bl-4 p{
-    color: #000;
-}
-/* font et aligmement des titres de niveau h3 dans le 2 ème bloc */
-.bl-2 h3{
-    color: #000;
-    text-transform: capitalize;
-    text-align: left;
-    font-weight: bold;
-}
-/* font et aligmement des titres des paragraphes dans le 2 ème bloc */
-.bl-2 p{
-    color: #000;
-    padding-top: 10px;
-    text-align: left;
-}
-/* Taille du 3ème bloc */
-.bl-3 {
-    width: 20%;
-    height: auto;
-}
-/* taille de l'image dans le 3ème bloc */
-.bl-3 img{
-    width: 300px;
-    height: auto;
-}
-/* taille et alignement du dernier bloc */
-.bl-4{
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-/* bloc blanc dans lequel sont contenu les 4 autres bloc */
-
-.bloc-blanc{
-    display: flex;
-    width: 100%;
-    background-color: white;
-    justify-content: center;
-    padding-top: 20px;
-    padding-bottom: 70px;
-
-}
-.bloc-blanc a{
-    text-decoration: none;
-}
-/* bloc text */
-.blc-text{
-    width: 30%;
-}
-/* sous-titre du bloc-texte */
-html body main div.blc-text h4{
-    text-transform: uppercase;
-    padding-top:35px;
-    padding-bottom:35px;
-    color:#FFF ;
-    font-weight: bold;
-}
-/* bloc numéro de page */
-.num-page{
-    display: flex;
-    width: 60%;
-    border: solid 1px white;
-    height: 40px;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 60px;
-}
-.num-1, .num-2, .num-3{
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    
-}
-.num-1,.num-3{
-    background-color: white;
-    color: #000;
-    display: flex;
-    align-items: center;
-   justify-content: center;
-    
-}
-.num-2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: #FFF solid 1px;
-    color: #FFF;
-}
-.bloc-affiche{
-    width: 180px;
-    display: flex;
-    justify-content: space-evenly;
-}
-.num-page p{
-    padding-left: 15px;
-}
-
-/* -----------------------------------------------------------------RESPONSIVE----------------------------------------------------------------- */
-
-@media screen and (max-width:360px){
-/* -------------------------------------------------------HEADER--------------------------------------------------- */
-header{
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-}
-/* disparition de l'instagram */
-.insta{
-    display: none;
-}
-/* modification de la taille du logo et de l'alignement */
-.logotype{
-    transform: translateY(25px);
-    width: 120px;
-    height: auto;
-}
-/* le texte menu à coté du bouton burger */
-.menu{
-    display: none;
-}
-/* alignement du bouton burger */
-.btn{
-    padding-left: 0;
-}
-
-/* ------------------------------------------------------------------MENU--------------------------------------------- */
-/* reduction de la taille du menu en responsive */
-html body nav.show ul li a {
-	text-decoration: none;
-	color: #FFF;
-	font-size: 29px;
-	line-height: 54px !important;
-}
-/* --------------------------------------------------------FOOTER--------------------------------------------- */
-.foot{
-    height: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 65px;
-}
-/* menu */
-html body nav.show ul li a {
-	text-decoration: none;
-	color: #FFF;
-	font-size: 29px;
-	line-height: 95px;
-}
-html body nav.show ul {
-	transform: translateY(20PX);
-}
-/* -------------------------------------------------------PAGE ACCUEIL------------------------------------------------------- */
-/* photo */
-.accueil{
-    width: 348px;
-}
-/* titre */
-html body main h1{
-    font-size: 18px;
-    margin-bottom: 0;
-    width: 80%;
-}
-/* lien menu footer */
-html body footer section.foot div.menu-footer {
-        display: flex;
-        flex-direction: column;
-        text-align: center; 
-}
-/* "pipe" dans le menu footer */
-.trait-blanc{
-    display: none;
-}
-
-/* --------------------------------------------------------PAGE A PROPOS------------------------------------------------------------*/
- /* conteneur texte + photo + bouton */
-.center {
-	display: flex;
-	width: 100%;
-	padding-top: 10px;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-}
-/* conteneur bloc text */
-.txt {
-	width: auto;
-	transform: translateY(0);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding-top: 25px;
-}
-/* texte */
-.txt p {
-	padding-top: 48px;
-	text-align: center;
-    font-size: 14px;
-}
-.titre {
-	font-size: 24px;
-	color: #62388E;
-	text-align: center;
-}
-/* bouton rendez-vous */
-
-html body main.main-apropos button.rdv{
-    transform: translateY(-100px);
-}
-/* photo de maud */
-.photo-maud{
-    transform: translateY(-70px);
-}
-/* ---------------------------------------------------------MES CREATIONS----------------------------------------------------------- */
-.texte-crea{
-    width: 100%;
-    text-align: center;  
-    transform: translateX(0); 
-    margin-bottom: 20px;
-}
-.bloc-crea{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.bloc-photo{
-    width: 100%;
-    display: flex;
-    margin-left: 0;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-.bloc-photo img{
-    width: 48%;
-    padding-left: 0;
-}
 /* ----------------------------------------------------------PRESTATIONS ET SERVICES--------------------------------------------------------- */
 
 .groupe-presta{
     flex-direction: column;
-    width: 100%;
+    width: 90%;
     align-items: center;
+} 
+.btdesmains{
+    width: 90%;
+}
+.btdespieds{
+    margin-top: 20px;
+    width: 90%;
 }
 .btdespieds ul {
  transform: translateY(0);
@@ -1931,6 +806,7 @@ html body main.main-apropos button.rdv{
 .center-blog{
     display: flex;
     flex-direction: column;
+    align-items: center;
 
 }
 /* -----------------------------------------------------------------------ARTICLE 2-BLOG---------------------------------------------------------------- */
@@ -1945,8 +821,8 @@ html body main.main-apropos button.rdv{
 }
 .bl-1{
     width: 50%;
-    transform: translateY(395px);
-    margin-left: 20px;
+    position: absolute;
+    top:409px
 }
 .bl-2{
     width: 100%;
@@ -1968,7 +844,8 @@ html body main.main-apropos button.rdv{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-    transform: translateX(90%);
+    margin-left: 50%;
+
 }
 .retour{
     text-align: center;
@@ -1994,13 +871,11 @@ html body main.main-apropos button.rdv{
 	flex-direction: column;
 }
 .inst-maud {
-	width: 100%;
+	width: 250px;
 	height: 250px;
 	transform: translateY(9px);
+	transform: translateX(24px);
 	margin-top: 50px;
-}
-html body main div.contact-center form div.civi input#prenom{
-    width: 52%;
 }
 .joindre {
 	display: flex;
@@ -2014,250 +889,171 @@ html body main div.contact-center form div.civi input#prenom{
 	/* transform: translateY(-250px); */
 	position: absolute;
 	top: 866px;
-	right: 98px;
+	right: 74px;
 	/* margin-bottom: 50px; */
 }
 }
-@media screen and (max-width:412px) {
+@media screen and (min-width:375px) {
 
-/* --------------------------------------------------------HEADER------------------------------------------     */
-
-header{
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-}
-/* disparition de l'instagram */
-.insta{
-    display: none;
-}
-/* modification de la taille du logo et de l'alignement */
-.logotype{
-    transform: translateY(25px);
-    width: 120px;
-    height: auto;
-}
-/* le texte menu à coté du bouton burger */
-.menu{
-    display: none;
-}
-/* alignement du bouton burger */
-.btn{
-    padding-left: 0;
-}
-
-/* -----------------------------------------------------MENU-------------------------------------------------------------- */
-html body nav.show ul li a {
-	text-decoration: none;
-	color: #FFF;
-	font-size: 29px;
-	line-height: 54px !important;
-   
-}  
-html body nav.show ul{
-
-    transform: translateY(25px);
-}
-/* -------------------------------------------------------ACCUEIL--------------------------------------------------------------- */
-/* photo */
-.accueil{
-    width: 348px;
-}
-/* titre */
-html body main h1{
-    font-size: 18px;
-    margin-bottom: 0;
-    width: 80%;
-}
-/* lien menu footer */
-html body footer section.foot div.menu-footer {
+    .bl-1{
+        width: 50%;
+        position: absolute;
+        top:418px
+    }
+    .joindre {
         display: flex;
         flex-direction: column;
-        text-align: center; 
+        background-color: #000;
+        align-items: center;
+        justify-content: center;
+        border: #62388E 3px solid;
+        width: 209px;
+        height: 194px;
+        /* transform: translateY(-250px); */
+        position: absolute;
+        top: 866px;
+        right: 82px;
+        /* margin-bottom: 50px; */
+    }
+    
 }
-/* "pipe" dans le menu footer */
-.trait-blanc{
-    display: none;
-}
+@media screen and (min-width:384px) {
 
-/* ----------------------------------------------------A PROPOS----------------------------------------------------------- */
- /* conteneur texte + photo + bouton */
- .center {
-	display: flex;
-	width: 100%;
-	padding-top: 10px;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
+    .bl-1{
+        width: 50%;
+        position: absolute;
+        top:425px
+    }
+    
 }
-/* conteneur bloc text */
-.txt {
-	width: auto;
-	transform: translateY(0);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding-top: 25px;
-}
-/* texte */
-.txt p {
-	padding-top: 48px;
-	text-align: center;
-    font-size: 14px;
-}
-.titre {
-	font-size: 24px;
-	color: #62388E;
-	text-align: center;
-}
-/* bouton rendez-vous */
+@media screen and (min-width:412px) {
 
-html body main.main-apropos button.rdv{
-    transform: translateY(-100px);
+    .bl-1{
+        width: 50%;
+        position: absolute;
+        top:444px
+    }
+    .joindre {
+        top: 866px;
+        right: 99px;
+        /* margin-bottom: 50px; */
+    }
 }
-/* photo de maud */
-.photo-maud{
-    transform: translateY(-70px);
-}
-/* --------------------------------------------------------------MES CREATIONS---------------------------------------- */
-.texte-crea {
-	width: 100%;
-	text-align: center;
-	transform: translateX(0); 
-}
-.bloc-crea {
-	display: flex;
-	width: 100%;
-	margin-top: 50px;
-	flex-direction: column;
-}
-.bloc-photo {
-	display: flex;
-	width: 100%;
-	flex-wrap: wrap;
-    justify-content: none; 
-	margin-left: 0; 
-    margin-top: 15px;
-}
-.bloc-photo img {
-	width: 50%;
-	height: auto;
-	padding-left: 0; 
-	padding-bottom: 5px;
-}
-/* --------------------------------------------PRESTATIONS ET TARIFS---------------------------------------- */
+@media screen and (min-width:428px) {
 
-.groupe-presta{
-    flex-direction: column;
-    width: 90%;
-    align-items: center;
-    margin-bottom: 18px;
-
+    .bl-1{
+        width: 50%;
+        position: absolute;
+        top:455px
+    }
+    
 }
+@media screen and (min-width:667px) {
 
-.btdesmains, .btdespieds {
-	width: 350px;
-	height: auto;
-	border: #FFF 1px solid;
-	text-align: center;
-	padding: 20px;
-	margin-bottom: 20px;
+    .bl-1{
+        width: 50%;
+        position: absolute;
+        top:614px
+    }
+    
 }
-.btdespieds ul {
- transform: translateY(0);
- 
-}
-/* -------------------------------------------------------------BLOG--------------------------------------------------- */
-.center-blog{
+@media screen and (min-width:730px) {
 
+    .bl-1{
+        width: 50%;
+        position: absolute;
+        top:676px
+    }
+    
+}
+@media screen and (min-width:800px) {
+
+    .bl-1{
+        width: 50%;
+        position: absolute;
+        top:702px
+    }
+    
+}
+@media screen and (min-width:810px) {
+
+    .bl-1{
+        width: 50%;
+        position: absolute;
+        top:709px
+    }
+    .joindre {
+        right: 298px;
+        /* margin-bottom: 50px; */
+    }
+}
+@media screen and (min-width:854px) {
+
+    .bl-1{
+        width: 50%;
+        position: absolute;
+        top:739px
+    }
+    
+}
+@media screen and (min-width:883px) {
+
+    .bl-1{
+        width: 50%;
+        position: absolute;
+        top:758px
+    }
+    
+}
+@media screen and (min-width:915px) {
+/* page article-2 */
+    .bl-1{
+        width: 50%;
+        position: absolute;
+        top:116px;
+        right:620px;   
+    }
+    .bl-2 {
+        width: 20%;
+        text-align: center;
+        margin-left: 70px;
+    }
+    .bl-3 {
+        width: 20%;
+        height: auto;
+    }
+    .bl-4 {
+        width: 20%;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        margin-left: 80px;
+    } 
+    
+    /* page contact */
+    .inst-maud {
+        transform: translateX(50px);
+        margin-top: 10px;
+    }
+    .joindre {
+        top: 576px;
+    }
 }
+@media screen and (min-width:1080px) {
 
-/* -------------------------------------------------------------ARTICLE-2-BLOG------------------------------------------------------ */
-.bloc-blanc {
-	display: flex;
-	width: 100%;
-	background-color: white;
-	justify-content: center;
-	padding-top: 20px;
-	padding-bottom: 70px;
-	flex-direction: column;
-}
-.bl-1{
-    width: 50%;
-    transform: translateY(384px) !important;
-    margin-left: 20px;
-}
-.bl-2{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 15px;
-   
-
-}
-.bl-3{
-    width: 100%;
-}
-.bl-3 img{
-    width: 100%;
-}
-.bl-4 {
-	width: 50%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-    transform: translateX(90%);
-}
-.retour{
-    text-align: center;
-    padding-top: 20px;
-}.blc-text {
-	width: 100%;
-	text-align: center;
-    font-size: 15px;
-}
-.num-page {
-	display: flex;
-	width: 80%;
-	border: solid 1px white;
-	height: 40px;
-	align-items: center;
-	justify-content: space-between;
-	margin-top: 60px;
-}
-/* -------------------------------------------------------------CONTACT---------------------------------------------------- */
-.contact-center {
-	display: flex;
-	padding-top: 50px;
-	flex-direction: column;
-}
-html body main div.contact-center form div.civi{
-    display: flex;
-}
-.inst-maud {
-    width: 100%;
-    height: 250px;
-    transform: translateY(9px);
-    margin-top: 50px;
-}
-
-.joindre {
-    /* display: flex; */
-    flex-direction: column;
-    background-color: #000;
-    align-items: center;
-    justify-content: center;
-    border: #62388E 3px solid;
-    width: 209px;
-    height: 194px;
-    /* transform: translateY(-250px); */
-    position: absolute;
-    top: 879px !important;
-    right: 89px !important;
-    /* margin-bottom: 50px; */
-}
-
+    .joindre {
+        display: flex;
+        flex-direction: column;
+        background-color: #000;
+        align-items: center;
+        justify-content: center;
+        border: #62388E 3px solid;
+        width: 230px;
+        height: 230px;
+        transform: translateY(-250px);
+        position: absolute;
+        top: 545px;
+        right: 222px;
+    }
+    
 }
